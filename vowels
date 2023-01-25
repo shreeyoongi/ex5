@@ -1,0 +1,68 @@
+palindrome :
+n=int(input('enter the number'))
+num=n
+sum=0
+while(n>0):
+    a=n%10
+    sum=sum*10+a
+    n=n//10
+if(sum==num):
+    print('the given number is palindrome',sum)
+else:
+    print('the given number is palindrome',sum)
+
+output :
+enter the number 345
+the given number is palindrome 543
+
+reverse:
+n=int(input('enter the number:'))
+sum=0
+while(n>0):
+    a=n%10
+    sum=sum*10+a
+    n=n//10
+    print('the reversed string is:',sum)
+output :
+enter the number:12345
+the reversed string is: 5
+the reversed string is: 54
+the reversed string is: 543
+the reversed string is: 5432
+the reversed string is: 54321
+ 
+length :
+str=input('enter the string')
+count=0
+for i in str :
+    count+=1
+print(count)
+output:
+enter the string minyoongi
+10
+
+vowels:
+str = input("Enter the string: ")
+newStr = ""
+for ch in str : 
+    letter = ch.lower()
+    if letter == 'a' \
+       or letter == 'e' \
+       or letter == 'i' \
+       or letter == 'o' \
+       or letter == 'u' :
+        newStr += '@'
+    else :
+        newStr += ch
+print(newStr)
+output:
+Enter the string: engineering
+@ng@n@@r@ng
+>>> 
+============== RESTART: C:/Users/test02/Desktop/vowel input.py ==============
+Enter the string: college
+c@ll@g@
+>>> 
+
+
+
